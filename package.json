@@ -1,0 +1,38 @@
+{
+  "name": "templateexport",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@ntegral/react-owl-carousel": "^1.0.1",
+    "@reduxjs/toolkit": "^1.8.3",
+    "css-loader": "^6.7.1",
+    "formik": "^2.2.9",
+    "less-loader": "^11.0.0",
+    "next": "12.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-magnific-popup": "^1.0.1",
+    "react-owl-carousel": "^2.3.3",
+    "react-redux": "^8.0.2",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.0.8",
+    "react-wow": "^1.0.0",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.54.3",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.5",
+    "sweetalert2": "^11.4.26",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.3"
+  }
+}
