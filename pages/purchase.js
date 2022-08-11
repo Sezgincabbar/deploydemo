@@ -44,9 +44,6 @@ const Purchase = () => {
   const [districts, setDistricts] = useState([null]);
   const [district, setDistrict] = useState(null);
 
-  //errors
-  const [error, setError] = useState(null);
-
   let regex = new RegExp(
     "^[a-z0-9][-_.+!#$%&'*/=?^`{|]{0,1}([a-z0-9][-_.+!#$%&'*/=?^`{|]{0,1})*[a-z0-9]@[a-z0-9][-.]{0,1}([a-z][-.]{0,1})*[a-z0-9].[a-z0-9]{1,}([.-]{0,1}[a-z]){0,}[a-z0-9]{0,}$"
   );
@@ -66,7 +63,6 @@ const Purchase = () => {
           popup: styles.popup,
         },
       });
-      setError(true);
     } else if (password !== confirmPassword) {
       Swal.fire({
         icon: "error",
