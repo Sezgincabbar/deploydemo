@@ -54,7 +54,7 @@ const Purchase = () => {
     return newphone;
   };
   const handleSubmit = () => {
-    if (password.length <= 5) {
+    if (password?.length <= 5) {
       Swal.fire({
         icon: "error",
         title: "Hata",
@@ -77,15 +77,6 @@ const Purchase = () => {
         icon: "error",
         title: "Hata",
         text: "Email adresi geçersiz",
-        customClass: {
-          popup: styles.popup,
-        },
-      });
-    } else if (password.length <= 5) {
-      Swal.fire({
-        icon: "error",
-        title: "Hata",
-        text: "Şifre en az 6 karakter olmalıdır",
         customClass: {
           popup: styles.popup,
         },
@@ -183,7 +174,6 @@ const Purchase = () => {
                         required
                         id="id_name"
                       />
-
                       <input
                         value={phone}
                         onChange={(e) => setPhone(formatPhone(e.target.value))}
