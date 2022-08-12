@@ -196,7 +196,14 @@ function Home() {
                       {featuresLeft.map((item, index) => (
                         <ReactWOW key={index}>
                           <li id={item.id} className={`wow fadeInLeft ${item.id === "features1" ? " active" : null}`} data-wow-duration="1s">
-                            <a onClick={() => handleActive(item)} className="round-right" href={item.href} aria-controls={item.ariaControls} data-toggle="tab">
+                            <div
+                              onClick={() => handleActive(item)}
+                              className="round-right"
+                              id={"featuresCards"}
+                              href={item.href}
+                              aria-controls={item.ariaControls}
+                              data-toggle="tab"
+                            >
                               <div className="iq-fancy-box-01 text-right">
                                 {/* <i aria-hidden="true" className="ion-qr-code-outline"></i> */}
                                 <ion-icon name={item.icon}></ion-icon>
@@ -205,7 +212,7 @@ function Home() {
                                   <p>{item.description}</p>
                                 </div>
                               </div>
-                            </a>
+                            </div>
                           </li>
                         </ReactWOW>
                       ))}
@@ -239,7 +246,7 @@ function Home() {
                       {featuresRight.map((item, index) => (
                         <ReactWOW key={index}>
                           <li onClick={() => handleActive(item)} id={item.id} className="wow fadeInRight" data-wow-duration="1s">
-                            <a href={item.href} aria-controls={item.ariaControls} data-toggle="tab">
+                            <div href={item.href} id={"featuresCards"} aria-controls={item.ariaControls} data-toggle="tab">
                               <div className="iq-fancy-box-01">
                                 {/* <i aria-hidden="true" className="ion-ios-photos-outline"></i> */}
                                 <ion-icon name={item.icon}></ion-icon>
@@ -248,7 +255,7 @@ function Home() {
                                   <p>{item.description}</p>
                                 </div>
                               </div>
-                            </a>
+                            </div>
                           </li>
                         </ReactWOW>
                       ))}

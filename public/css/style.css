@@ -1702,7 +1702,7 @@ header.affix .navbar-nav {
   display: inline-block;
   width: 100%;
 }
-.iq-amazing-tab .nav-tabs li a {
+.iq-amazing-tab .nav-tabs li div#featuresCards {
   margin: 0;
   line-height: normal;
   border: none;
@@ -1716,9 +1716,9 @@ header.affix .navbar-nav {
   -o-transition: all 0s ease-in-out;
   -webkit-transition: all 0s ease-in-out;
 }
-.iq-amazing-tab .nav-tabs li.active a,
-.iq-amazing-tab .nav-tabs li.active a:hover,
-.iq-amazing-tab .nav-tabs li.active a:focus {
+.iq-amazing-tab .nav-tabs li.active div#featuresCards,
+.iq-amazing-tab .nav-tabs li.active div#featuresCards:hover,
+.iq-amazing-tab .nav-tabs li.active div#featuresCards:focus {
   color: #fff;
   border: none;
   left: -20px;
@@ -1731,7 +1731,7 @@ header.affix .navbar-nav {
   background: linear-gradient(to right, rgba(50, 159, 198, 1) 0%, rgba(0, 118, 167, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#329fc6', endColorstr='#0076a7', GradientType=1);
 }
-.iq-amazing-tab .nav-tabs li a:hover {
+.iq-amazing-tab .nav-tabs li div#featuresCards:hover {
   color: #fff;
   border: none;
   background: rgba(50, 159, 198, 1);
@@ -1747,7 +1747,7 @@ header.affix .navbar-nav {
 .iq-amazing-tab .nav-tabs li.active ion-icon {
   color: #fff;
 }
-.iq-amazing-tab .nav-tabs li.active a .iq-fancy-box-01:before {
+.iq-amazing-tab .nav-tabs li.active div#featuresCards .iq-fancy-box-01:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1762,7 +1762,7 @@ header.affix .navbar-nav {
   -moz-box-shadow: 0px 0px 0px 5px rgba(247, 247, 247, 1);
   box-shadow: 0px 0px 0px 5px rgba(247, 247, 247, 1);
 }
-.iq-amazing-tab .nav-tabs li.active a .iq-fancy-box-01:after {
+.iq-amazing-tab .nav-tabs li.active div#featuresCards .iq-fancy-box-01:after {
   content: "";
   position: absolute;
   z-index: 9;
@@ -1781,18 +1781,18 @@ header.affix .navbar-nav {
   background: linear-gradient(to right, rgba(0, 118, 167, 1) 0%, rgba(50, 159, 198, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0076a7', endColorstr='#329fc6', GradientType=1);
 }
-.nav-tabs li.active a.round-right,
-.nav-tabs li.active a.round-right:hover,
-.nav-tabs li.active a.round-right:focus {
+.nav-tabs li.active div#featuresCards.round-right,
+.nav-tabs li.active div#featuresCards.round-right:hover,
+.nav-tabs li.active div#featuresCards.round-right:focus {
   right: -20px;
   left: inherit;
 }
-.iq-amazing-tab .nav-tabs li.active a.round-right .iq-fancy-box-01:before {
+.iq-amazing-tab .nav-tabs li.active div#featuresCards.round-right .iq-fancy-box-01:before {
   background: #0076a7;
   right: -10px;
   left: inherit;
 }
-.iq-amazing-tab .nav-tabs li.active a.round-right .iq-fancy-box-01:after {
+.iq-amazing-tab .nav-tabs li.active div#featuresCards.round-right .iq-fancy-box-01:after {
   right: inherit;
   left: 100%;
   background: rgba(0, 118, 167, 1);
@@ -1804,18 +1804,18 @@ header.affix .navbar-nav {
   background: linear-gradient(to right, rgba(0, 118, 167, 1) 0%, rgba(50, 159, 198, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0076a7', endColorstr='#329fc6', GradientType=1);
 }
-.nav-tabs li.active a h4,
-.nav-tabs li.active a:hover h4,
-.nav-tabs li.active a:focus h4,
-.nav-tabs li.active a i,
-.nav-tabs li.active a:hover i,
-.nav-tabs li.active a:focus i {
+.nav-tabs li.active div#featuresCards h4,
+.nav-tabs li.active div#featuresCards:hover h4,
+.nav-tabs li.active div#featuresCards:focus h4,
+.nav-tabs li.active div#featuresCards i,
+.nav-tabs li.active div#featuresCards:hover i,
+.nav-tabs li.active div#featuresCards:focus i {
   color: #fff;
 }
-.iq-amazing-tab .nav-tabs li a:hover h4 {
+.iq-amazing-tab .nav-tabs li div#featuresCards:hover h4 {
   color: #fff;
 }
-.iq-amazing-tab .nav-tabs li a:hover i {
+.iq-amazing-tab .nav-tabs li div#featuresCards:hover i {
   background: none;
   color: #fff;
   -webkit-background-clip: text;

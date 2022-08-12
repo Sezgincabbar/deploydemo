@@ -63,15 +63,6 @@ const Purchase = () => {
           popup: styles.popup,
         },
       });
-    } else if (password !== confirmPassword) {
-      Swal.fire({
-        icon: "error",
-        title: "Hata",
-        text: "Şifreler uyuşmuyor",
-        customClass: {
-          popup: styles.popup,
-        },
-      });
     } else if (regex.test(email) === false) {
       Swal.fire({
         icon: "error",
@@ -99,6 +90,15 @@ const Purchase = () => {
         icon: "error",
         title: "Hata",
         text: "Lütfen tüm alanları doldurunuz",
+        customClass: {
+          popup: styles.popup,
+        },
+      });
+    } else if (password !== confirmPassword) {
+      Swal.fire({
+        icon: "error",
+        title: "Hata",
+        text: "Şifreler uyuşmuyor",
         customClass: {
           popup: styles.popup,
         },
