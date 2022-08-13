@@ -28,37 +28,70 @@ const Purchase = () => {
   const total = parseFloat(item?.price).toFixed(2) * 1.18;
 
   //form variables
-  const [companyName, setCompanyName] = useState(null);
-  const [phone, setPhone] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [address, setAddress] = useState(null);
-  const [competentName, setCompetentName] = useState(null);
-  const [competentSurName, setCompetentSurName] = useState(null);
-  const [competentPhone, setCompetentPhone] = useState(null);
-  const [userName, setUserName] = useState(null);
-  const [password, setPassword] = useState(null);
-  const [confirmPassword, setConfirmPassword] = useState(null);
+  const [companyName, setCompanyName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [competentName, setCompetentName] = useState("");
+  const [competentSurName, setCompetentSurName] = useState("");
+  const [competentPhone, setCompetentPhone] = useState("");
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   //cities
   const [city, setCity] = useState("İstanbul");
-  const [districts, setDistricts] = useState([null]);
-  const [district, setDistrict] = useState(null);
+  const [districts, setDistricts] = useState([""]);
+  const [district, setDistrict] = useState("");
+
+  //errors
+  const [error, setError] = useState("");
 
   let regex = new RegExp(
     "^[a-z0-9][-_.+!#$%&'*/=?^`{|]{0,1}([a-z0-9][-_.+!#$%&'*/=?^`{|]{0,1})*[a-z0-9]@[a-z0-9][-.]{0,1}([a-z][-.]{0,1})*[a-z0-9].[a-z0-9]{1,}([.-]{0,1}[a-z]){0,}[a-z0-9]{0,}$"
   );
-  let phoneRegex = new RegExp("^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-s./0-9]*$");
-  const formatPhone = (phone) => {
-    let newphone = phone.replace(/[^0-9]/g, "");
-    phoneRegex.test(newphone);
-    return newphone;
+  const phoneTextField = (val, value) => {
+    //Check if we removing the last character
+    if (value?.replace(" ", "") < val.replace(" ", "")) {
+      val = val.replace(/\D/g, "");
+
+      //deleting first 90 for adding later
+      if (val.length >= 3) {
+        val = val.substring(2);
+      }
+
+      if (val.length >= 3) {
+        val = val.substring(0, 3) + " " + val.substring(3);
+      }
+
+      if (val.length >= 7) {
+        val = val.substring(0, 7) + " " + val.substring(7);
+      }
+
+      if (val.length >= 10) {
+        val = val.substring(0, 10) + " " + val.substring(10);
+      }
+      return "+90 " + val;
+    } else {
+      return val;
+    }
   };
   const handleSubmit = () => {
-    if (password?.length <= 5) {
+    if (password.length <= 5) {
       Swal.fire({
         icon: "error",
         title: "Hata",
         text: "Şifre en az 6 karakter olmalıdır",
+        customClass: {
+          popup: styles.popup,
+        },
+      });
+      setError(true);
+    } else if (password !== confirmPassword) {
+      Swal.fire({
+        icon: "error",
+        title: "Hata",
+        text: "Şifreler uyuşmuyor",
         customClass: {
           popup: styles.popup,
         },
@@ -94,15 +127,6 @@ const Purchase = () => {
           popup: styles.popup,
         },
       });
-    } else if (password !== confirmPassword) {
-      Swal.fire({
-        icon: "error",
-        title: "Hata",
-        text: "Şifreler uyuşmuyor",
-        customClass: {
-          popup: styles.popup,
-        },
-      });
     } else {
       dispatch(setUserInfo({ companyName, phone, email, address, city, district, competentName, competentSurName, competentPhone, userName }));
       Swal.fire({
@@ -115,9 +139,6 @@ const Purchase = () => {
       });
       Router.push({
         pathname: "/payment",
-        query: {
-          id,
-        },
       });
     }
   };
@@ -174,17 +195,18 @@ const Purchase = () => {
                         required
                         id="id_name"
                       />
+
                       <input
                         value={phone}
-                        onChange={(e) => setPhone(formatPhone(e.target.value))}
+                        onChange={(e) => setPhone(phoneTextField(e.target.value, phone))}
                         type="text"
                         className="form-control"
                         placeholder="Telefon"
                         data-mask="0500 000 00 00"
+                        maxLength="17"
                         required
                         id="id_phone"
                         autoComplete="off"
-                        maxLength="14"
                       />
 
                       <input
@@ -262,12 +284,12 @@ const Purchase = () => {
 
                       <input
                         value={competentPhone}
-                        onChange={(e) => setCompetentPhone(e.target.value)}
+                        onChange={(e) => setCompetentPhone(phoneTextField(e.target.value, competentPhone))}
                         type="text"
                         className="form-control"
                         placeholder="Yetkili Telefonu"
                         data-mask="0500 000 00 00"
-                        maxLength="14"
+                        maxLength="17"
                         required
                         id="id_userphone"
                         autoComplete="off"
@@ -282,7 +304,6 @@ const Purchase = () => {
                         maxLength="100"
                         required
                         id="id_username"
-                        autoComplete="off"
                       />
 
                       <input
@@ -294,7 +315,6 @@ const Purchase = () => {
                         maxLength="100"
                         required
                         id="id_password"
-                        autoComplete="off"
                       />
 
                       <input

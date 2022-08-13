@@ -14,6 +14,7 @@ export default function Payment() {
   const [showInput, setShowInput] = useState(false);
   const [showForm, setShowForm] = useState(false);
   const [showContract, setShowContract] = useState(false);
+  const [isDisable, setIsDisable] = useState(true);
 
   const tax = parseFloat(item?.price).toFixed(2) * 0.18;
   const total = parseFloat(item?.price).toFixed(2) * 1.18;
@@ -147,7 +148,7 @@ export default function Payment() {
                                 onaylıyorum.
                               </div>
                               <label className={styles.container}>
-                                <input type="checkbox" />
+                                <input type="checkbox" value={isDisable} onChange={() => setIsDisable(!isDisable)} />
                                 <span className={styles.checkmark}></span>
                               </label>
                             </div>
@@ -163,15 +164,20 @@ export default function Payment() {
                       </tbody>
                     </table>
                   </div>
+
                   <button
+                    disabled={isDisable}
                     onClick={() =>
                       Swal.fire({
                         title: "Tebrikler",
                         text: "Ödeme işleminiz başarılı bir şekilde gerçekleştirildi.",
                         icon: "success",
+                        customClass: {
+                          popup: styles.popup,
+                        },
                       })
                     }
-                    className="button btn-block iq-mt-25"
+                    className={`button btn-block iq-mt-25 ${isDisable ? styles.disabled : ""}`}
                   >
                     Devam Et
                   </button>

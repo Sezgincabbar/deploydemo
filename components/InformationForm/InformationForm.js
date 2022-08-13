@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import styles from "./InformationForm.module.scss";
 
 function InformationForm() {
   const userInfo = useSelector((state) => state.user.user);
+  const productInfo = useSelector((state) => state.product.product);
+  const price = parseFloat(userInfo?.price).toFixed(2) + parseFloat(productInfo?.price * 1.18).toFixed(2);
+  useEffect(() => {
+    console.log(price);
+  }, []);
+
   return (
     <div>
       <h3>ÖN BİLGİLENDİRME FORMU</h3>
@@ -47,19 +53,38 @@ function InformationForm() {
       </p>
       <h5>4. SÖZLEŞME KONUSU ÜRÜN/ÜRÜNLER BİLGİLERİ</h5>
       <p>
-        4.1 Malın / Ürün/Ürünlerin / Hizmetin temel özellikleri (türü, miktarı, marka/modeli, rengi, adedi) SATICI’ya ait internet sitesinde yer almaktadır.
-        Ürünün temel özelliklerini kampanya süresince inceleyebilirsiniz. Kampanya tarihine kadar geçerlidir. 4.2 Listelenen ve sitede ilan edilen fiyatlar
-        satış fiyatıdır. İlan edilen fiyatlar ve vaatler güncelleme yapılana ve değiştirilene kadar geçerlidir. Süreli olarak ilan edilen fiyatlar ise
-        belirtilen süre sonuna kadar geçerlidir. 4.3 Sözleşme konusu mal ya da hizmetin tüm vergiler dâhil satış fiyatı aşağıdaki tabloda gösterilmiştir.
+        <p>
+          4.1 Malın / Ürün/Ürünlerin / Hizmetin temel özellikleri (türü, miktarı, marka/modeli, rengi, adedi) SATICI’ya ait internet sitesinde yer almaktadır.
+          Ürünün temel özelliklerini kampanya süresince inceleyebilirsiniz. Kampanya tarihine kadar geçerlidir.
+        </p>{" "}
+        <p>
+          4.2 Listelenen ve sitede ilan edilen fiyatlar satış fiyatıdır. İlan edilen fiyatlar ve vaatler güncelleme yapılana ve değiştirilene kadar geçerlidir.
+          Süreli olarak ilan edilen fiyatlar ise belirtilen süre sonuna kadar geçerlidir.
+        </p>{" "}
+        4.3 Sözleşme konusu mal ya da hizmetin tüm vergiler dâhil satış fiyatı aşağıdaki tabloda gösterilmiştir.
         <br />
-        <span>Ödeme Şekli ve Planı: </span>Pınarbaşı Mh. Hürriyet Cd. Teknokent AR-GE 1 No: 3B D: 33 Konyaaltı/ANTALYA
+        <span>
+          <table className={styles.table}>
+            <tr>
+              <th>Ürün Adı ve Temel Nitelikleri</th>
+              <th>Adet Satış Bedeli</th>
+            </tr>
+            <tr>
+              <td>{`${productInfo?.months} aylık Manifolt Üyeliği`}</td>
+              <td>{`₺${parseFloat(productInfo?.price * 1.18).toFixed(2)}`}</td>
+            </tr>
+          </table>
+        </span>
+        <br />
+        <span>Ödeme Şekli ve Planı: </span>Kredi Kartı/Banka Kartı
         <br />
         <span>Teslimat Adresi: </span>
         {`${userInfo.address} ${userInfo.district}/${userInfo.city}`}
         <br />
         <span>Fatura Adresi: </span> {`${userInfo.address} ${userInfo.district}/${userInfo.city}`}
         <br />
-        <span>Sipariş Tarihi: </span>+90 242 255 0250
+        <span>Sipariş Tarihi: </span>
+        {new Date().toLocaleDateString()}
       </p>
       <h5>5. GENEL HÜKÜMLER</h5>
       <p>
@@ -200,7 +225,12 @@ function InformationForm() {
         <br />
         <li>İşbu Sözleşme ticari amaçlarla yapılmaktadır.</li>
         <br />
-        SATICI: Softalya Yazılım Ltd. Şti.
+        <span>SATICI: </span> Softalya Yazılım Ltd. Şti.
+        <br />
+        <span>ALICI: </span> {`${userInfo?.competentName} ${userInfo?.competentSurName}`}
+        <br />
+        <span>TARİH: </span>
+        {new Date().toLocaleDateString()}
       </p>
     </div>
   );

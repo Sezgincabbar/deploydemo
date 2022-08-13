@@ -146,3 +146,13 @@
   
 }
 
+.popup{
+  line-height: normal !important;
+  font-size: larger !important;
+  color: black !important;
+}
+
+.disabled{
+  pointer-events: none !important;
+  opacity: 0.3 !important; 
+}

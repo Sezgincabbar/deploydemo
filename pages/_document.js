@@ -96,7 +96,7 @@ class MyDocument extends Document {
           <script async type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
           <script async type="text/javascript" src="js/jquery.countdown.min.js"></script>
           <script async type="text/javascript" src="js/bootstrap.min.js"></script>
-
+          {/* <script async type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> */}
           {/* <!-- owl-carousel --> */}
           <script async type="text/javascript" src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
 

@@ -199,10 +199,10 @@ function Home() {
                             <div
                               onClick={() => handleActive(item)}
                               className="round-right"
-                              id={"featuresCards"}
                               href={item.href}
                               aria-controls={item.ariaControls}
                               data-toggle="tab"
+                              id={"featuresCards"}
                             >
                               <div className="iq-fancy-box-01 text-right">
                                 {/* <i aria-hidden="true" className="ion-qr-code-outline"></i> */}
@@ -246,7 +246,7 @@ function Home() {
                       {featuresRight.map((item, index) => (
                         <ReactWOW key={index}>
                           <li onClick={() => handleActive(item)} id={item.id} className="wow fadeInRight" data-wow-duration="1s">
-                            <div href={item.href} id={"featuresCards"} aria-controls={item.ariaControls} data-toggle="tab">
+                            <div href={item.href} aria-controls={item.ariaControls} data-toggle="tab" id={"featuresCards"}>
                               <div className="iq-fancy-box-01">
                                 {/* <i aria-hidden="true" className="ion-ios-photos-outline"></i> */}
                                 <ion-icon name={item.icon}></ion-icon>

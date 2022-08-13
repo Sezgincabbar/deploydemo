@@ -1,7 +1,14 @@
 import Link from "next/link";
 import React from "react";
-
 export default function Banner() {
+  // const handleActive = async (item) => {
+  //   const comp = document.querySelector(`document.querySelector('#carousel-example-generic>.carousel-indicators>li.asd')`);
+  //   const prevComps = document.querySelectorAll("#carousel-example-generic>.container>.carousel-inner>.item");
+  //   for await (const prevComp of prevComps) {
+  //     prevComp.classList.remove("active");
+  //   }
+  // };
+
   return (
     <section id="iq-home" className="banner iq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style={{ backgroundImage: "url(images/banner/bg.jpg)" }}>
       <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
