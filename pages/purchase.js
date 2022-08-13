@@ -129,14 +129,6 @@ const Purchase = () => {
       });
     } else {
       dispatch(setUserInfo({ companyName, phone, email, address, city, district, competentName, competentSurName, competentPhone, userName }));
-      Swal.fire({
-        icon: "success",
-        title: "Başarılı",
-        text: "Bilgileriniz Başarılı Bir Şekilde Kaydedildi",
-        customClass: {
-          popup: styles.popup,
-        },
-      });
       Router.push({
         pathname: "/payment",
       });

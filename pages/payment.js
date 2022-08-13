@@ -165,8 +165,9 @@ export default function Payment() {
                     </table>
                   </div>
 
-                  <button
+                  <div
                     disabled={isDisable}
+                    style={{ textAlign: "center", cursor: "pointer" }}
                     onClick={() =>
                       Swal.fire({
                         title: "Tebrikler",
@@ -180,7 +181,7 @@ export default function Payment() {
                     className={`button btn-block iq-mt-25 ${isDisable ? styles.disabled : ""}`}
                   >
                     Devam Et
-                  </button>
+                  </div>
                 </div>
               </div>
             </form>
