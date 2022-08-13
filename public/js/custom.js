@@ -119,38 +119,38 @@ $(document).ready(function () {
   /*------------------------
     Magnific Popup
     --------------------------*/
-  $(".popup-gallery").magnificPopup({
-    delegate: "a.popup-img",
-    tLoading: "Loading image #%curr%...",
-    type: "image",
-    mainClass: "mfp-img-mobile",
-    gallery: {
-      navigateByImgClick: true,
-      enabled: true,
-      preload: [0, 1],
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-    },
-  });
+  // $(".popup-gallery").magnificPopup({
+  //   delegate: "a.popup-img",
+  //   tLoading: "Loading image #%curr%...",
+  //   type: "image",
+  //   mainClass: "mfp-img-mobile",
+  //   gallery: {
+  //     navigateByImgClick: true,
+  //     enabled: true,
+  //     preload: [0, 1],
+  //   },
+  //   image: {
+  //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+  //   },
+  // });
 
-  $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
-    type: "iframe",
-    disableOn: 700,
-    mainClass: "mfp-fade",
-    preloader: false,
-    removalDelay: 160,
-    fixedContentPos: false,
-  });
+  // $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+  //   type: "iframe",
+  //   disableOn: 700,
+  //   mainClass: "mfp-fade",
+  //   preloader: false,
+  //   removalDelay: 160,
+  //   fixedContentPos: false,
+  // });
 
   /*------------------------
     Countdown
     --------------------------*/
-  $("#countdown").countdown({
-    date: "10/01/2019 23:59:59",
-    day: "Day",
-    days: "Days",
-  });
+  // $("#countdown").countdown({
+  //   date: "10/01/2019 23:59:59",
+  //   day: "Day",
+  //   days: "Days",
+  // });
 
   /*------------------------
     widget
@@ -177,7 +177,7 @@ $(document).ready(function () {
   /*------------------------
     counter
     --------------------------*/
-  $(".timer").countTo();
+  // $(".timer").countTo();
 
   /*------------------------
     Tab Mobile
@@ -206,14 +206,14 @@ $(document).ready(function () {
   /*------------------------
     Wow Animation
     --------------------------*/
-  var wow = new WOW({
-    boxClass: "wow",
-    animateClass: "animated",
-    offset: 0,
-    mobile: false,
-    live: true,
-  });
-  wow.init();
+  // var wow = new WOW({
+  //   boxClass: "wow",
+  //   animateClass: "animated",
+  //   offset: 0,
+  //   mobile: false,
+  //   live: true,
+  // });
+  // wow.init();
 
   /*------------------------
     Owl Carousel

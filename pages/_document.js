@@ -86,7 +86,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-
+          <script async src="jquery-3.5.1.js"></script>
           {/* <!-- jQuery --> */}
           <script async type="text/javascript" src="js/jquery.min.js"></script>
 
@@ -117,7 +117,7 @@ class MyDocument extends Document {
           {/* <!-- Countdown --> */}
 
           {/* <!-- Custom --> */}
-          {/* <script async type="text/javascript" src="js/custom.js"></script> */}
+          <script async type="text/javascript" src="js/custom.js"></script>
 
           {/* <!-- Style Customizer -->  */}
           {/* <script async type="text/javascript" src="js/style-customizer.js"></script> */}
