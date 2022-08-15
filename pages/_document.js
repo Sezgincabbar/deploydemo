@@ -97,12 +97,8 @@ class MyDocument extends Document {
           <script async type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
           <script async type="text/javascript" src="js/jquery.countdown.min.js"></script>
           <script async type="text/javascript" src="js/bootstrap.min.js"></script>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.2/ionicons.min.js"
-            integrity="sha512-2CLajDubS5WtGJysIjlV53WZWEP1Dve1eMbOEl/Yyg1xXQkfiuf3YZ3TMBxADg0hFU0YEIbTQqCKZvnFI0OqPg=="
-            crossOrigin="anonymous"
-            referrerPolicy="no-referrer"
-          ></script>
+          <script nomodule async src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          {/* <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> */}
           {/* <script async type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> */}
           {/* <!-- owl-carousel --> */}
           {/* <script async type="text/javascript" src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script> */}

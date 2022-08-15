@@ -11,6 +11,7 @@ import { resetUserInfo, setUserInfo } from "../slices/userInfo";
 import { resetProduct } from "../slices/productDetail";
 import styles from "../public/css/purchase.module.scss";
 import Link from "next/link";
+import errorStyle from "../public/css/404.module.scss";
 const Purchase = () => {
   const [item, setItem] = useState(null);
   const [showInput, setShowInput] = useState(false);
@@ -150,17 +151,17 @@ const Purchase = () => {
   }, []);
   if (Object.keys(prices).length === 0) {
     return (
-      <Layout>
-        <section className="overview-block-ptb iq-bg iq-bg-fixed iq-over-black-80" style={{ backgroundImage: "url(images/banner/bg.jpg)" }}></section>
-        <section className="overview-block-ptb">
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <h5>Lütfen Bir Manifolt Paketi Seçiniz</h5>
-            <Link href={"/#pricing"}>
-              <button className="btn btn-primary "> Fiyatlara Bakmak için Tıklayınız </button>
-            </Link>
-          </div>
-        </section>
-      </Layout>
+      <div className={errorStyle.myContainer}>
+        <div className={errorStyle.myCard}>
+          <h1 className={errorStyle.title}>Opps!</h1>
+          <h5 className={errorStyle.subtitle}>404 - Sayfa Bulunamadı</h5>
+          <img src="images/CarFault.svg" alt="CarFault" className={errorStyle.image} />
+          <h6 style={{ marginTop: "40px" }}>Lütfen Bir Manifolt Paketi Seçiniz.</h6>
+          <Link href="/#pricing">
+            <button className={errorStyle.customButton}>Fiyat Listesine Git</button>
+          </Link>
+        </div>
+      </div>
     );
   }
   return (

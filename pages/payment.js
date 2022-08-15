@@ -3,6 +3,7 @@ import Router from "next/router";
 import Swal from "sweetalert2";
 import Link from "next/link";
 import styles from "../public/css/payment.module.scss";
+import errorStyle from "../public/css/404.module.scss";
 import Layout from "../components/Layout";
 
 import InformationForm from "../components/InformationForm/InformationForm";
@@ -28,17 +29,17 @@ export default function Payment() {
 
   if (Object.keys(userInfo).length === 0 || Object.keys(prices).length === 0) {
     return (
-      <Layout>
-        <section className="overview-block-ptb iq-bg iq-bg-fixed iq-over-black-80" style={{ backgroundImage: "url(images/banner/bg.jpg)" }}></section>
-        <section className="overview-block-ptb">
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <h5>Lütfen Bir Manifolt Paketi Seçiniz</h5>
-            <Link href={"/#pricing"}>
-              <button className="btn btn-primary "> Fiyatlara Bakmak için Tıklayınız </button>
-            </Link>
-          </div>
-        </section>
-      </Layout>
+      <div className={errorStyle.myContainer}>
+        <div className={errorStyle.myCard}>
+          <h1 className={errorStyle.title}>Opps!</h1>
+          <h5 className={errorStyle.subtitle}>404 - Sayfa Bulunamadı</h5>
+          <img src="images/CarFault.svg" alt="CarFault" className={errorStyle.image} />
+          <h6 style={{ marginTop: "40px" }}>Lütfen Bir Manifolt Paketi Seçiniz.</h6>
+          <Link href="/#pricing">
+            <button className={errorStyle.customButton}>Fiyat Listesine Git</button>
+          </Link>
+        </div>
+      </div>
     );
   }
 
