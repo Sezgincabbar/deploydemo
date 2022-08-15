@@ -188,6 +188,7 @@ const Purchase = () => {
                         required
                         id="id_name"
                       />
+                      <span style={{ marginLeft: "10px" }}>Telefon numarısını başında 0 olmadan giriniz!</span>
 
                       <input
                         value={phone}
@@ -274,6 +275,7 @@ const Purchase = () => {
                         required
                         id="id_lastname"
                       />
+                      <span style={{ marginLeft: "10px" }}>Telefon numarısını başında 0 olmadan giriniz!</span>
 
                       <input
                         value={competentPhone}
