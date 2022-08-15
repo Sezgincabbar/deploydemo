@@ -166,8 +166,8 @@ export default function Payment() {
                   </div>
 
                   <div
-                    disabled={isDisable}
                     style={{ textAlign: "center", cursor: "pointer" }}
+                    disabled={isDisable}
                     onClick={() =>
                       Swal.fire({
                         title: "Tebrikler",
@@ -176,10 +176,15 @@ export default function Payment() {
                         customClass: {
                           popup: styles.popup,
                         },
+                      }).then((result) => {
+                        if (result.value) {
+                          Router.push("/");
+                        }
                       })
                     }
                     className={`button btn-block iq-mt-25 ${isDisable ? styles.disabled : ""}`}
                   >
+                    {" "}
                     Devam Et
                   </div>
                 </div>

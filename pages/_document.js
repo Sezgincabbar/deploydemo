@@ -86,13 +86,9 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {/* <script
-            async
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"
-          ></script> */}
+
           {/* <!-- jQuery --> */}
+          {/* <script async src="jquery-3.5.1.js"></script> */}
           <script async type="text/javascript" src="js/jquery.min.js"></script>
 
           {/* <!-- bootstrap --> */}
@@ -101,11 +97,15 @@ class MyDocument extends Document {
           <script async type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
           <script async type="text/javascript" src="js/jquery.countdown.min.js"></script>
           <script async type="text/javascript" src="js/bootstrap.min.js"></script>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.2/ionicons.min.js"
+            integrity="sha512-2CLajDubS5WtGJysIjlV53WZWEP1Dve1eMbOEl/Yyg1xXQkfiuf3YZ3TMBxADg0hFU0YEIbTQqCKZvnFI0OqPg=="
+            crossOrigin="anonymous"
+            referrerPolicy="no-referrer"
+          ></script>
           {/* <script async type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> */}
           {/* <!-- owl-carousel --> */}
-          <script async type="text/javascript" src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
-
-          <script defer src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+          {/* <script async type="text/javascript" src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script> */}
 
           {/* <!-- Counter --> */}
 
