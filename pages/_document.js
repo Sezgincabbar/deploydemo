@@ -89,15 +89,15 @@ class MyDocument extends Document {
 
           {/* <!-- jQuery --> */}
           {/* <script async src="jquery-3.5.1.js"></script> */}
-          <script async type="text/javascript" src="js/jquery.min.js"></script>
+          {/* <script async type="text/javascript" src="js/jquery.min.js"></script> */}
 
           {/* <!-- bootstrap --> */}
-          <script async type="text/javascript" src="js/jquery.appear.js"></script>
+          {/* <script async type="text/javascript" src="js/jquery.appear.js"></script>
           <script async type="text/javascript" src="js/counter/jquery.countTo.js"></script>
           <script async type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
           <script async type="text/javascript" src="js/jquery.countdown.min.js"></script>
-          <script async type="text/javascript" src="js/bootstrap.min.js"></script>
-          <script nomodule async src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <script async type="text/javascript" src="js/bootstrap.min.js"></script> */}
+          <script async src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
           {/* <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> */}
           {/* <script async type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> */}
           {/* <!-- owl-carousel --> */}
@@ -118,7 +118,7 @@ class MyDocument extends Document {
           {/* <!-- Countdown --> */}
 
           {/* <!-- Custom --> */}
-          <script async type="text/javascript" src="js/custom.js"></script>
+          {/* <script async type="text/javascript" src="js/custom.js"></script> */}
 
           {/* <!-- Style Customizer -->  */}
           {/* <script async type="text/javascript" src="js/style-customizer.js"></script> */}

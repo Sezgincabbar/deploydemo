@@ -202,7 +202,6 @@ const Purchase = () => {
                         id="id_phone"
                         autoComplete="off"
                       />
-
                       <input
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}

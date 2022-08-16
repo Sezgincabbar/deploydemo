@@ -3,16 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint",
     "export": "next export"
   },
   "dependencies": {
     "@ntegral/react-owl-carousel": "^1.0.1",
     "@reduxjs/toolkit": "^1.8.3",
+    "chalk": "^5.0.1",
     "css-loader": "^6.7.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
     "formik": "^2.2.9",
     "less-loader": "^11.0.0",
     "next": "12.2.3",
