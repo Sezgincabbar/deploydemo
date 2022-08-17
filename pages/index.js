@@ -596,9 +596,9 @@ function Home() {
                             <li>Customer Support 24/7</li>
                           </ul>
                           <div className="price-footer">
-                            <a onClick={() => handleNavigateToPurchase(item)} className="button btn">
-                              SATIN AL
-                            </a>
+                            <button disabled={item.id === 1 ? true : false} onClick={() => handleNavigateToPurchase(item)} className="button btn">
+                              {item.id === 1 ? "Yakında" : "SATIN AL"}
+                            </button>
                           </div>
                         </div>
                       </div>
