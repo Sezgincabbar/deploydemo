@@ -1,8 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
 export default function Header() {
+  const navbarRef = useRef();
+
+  const closeToggle = () => {
+    const navbarButton = document.querySelector('button[class="navbar-toggle"]');
+    const navbarContainer = document.querySelector('div[class="navbar-collapse collapse in"]');
+    navbarContainer.classList.remove("in");
+    navbarContainer.setAttribute("aria-expanded", "false");
+    navbarButton.classList.add("collapsed");
+    navbarButton.setAttribute("aria-expanded", "false");
+  };
   const router = useRouter();
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
@@ -24,7 +34,7 @@ export default function Header() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <nav className="navbar navbar-default">
+              <nav ref={navbarRef} className="navbar navbar-default">
                 {/* <!-- Brand and toggle get grouped for better mobile display --> */}
                 <div className="navbar-header">
                   <button
@@ -50,26 +60,26 @@ export default function Header() {
                     {"Oturum Aç"}
                   </a>
                   <ul className="nav navbar-nav navbar-right" id="top-menu">
-                    <li>
+                    <li onClick={closeToggle}>
                       <Link href="#about-us">Hakkında</Link>
                     </li>
-                    <li>
+                    <li onClick={closeToggle}>
                       <Link href="#features">Özellikler</Link>
                     </li>
-                    <li>
+                    <li onClick={closeToggle}>
                       <Link href="#screenshots">Ekran Görüntüleri</Link>
                     </li>
-                    <li>
+                    <li onClick={closeToggle}>
                       <Link href="#howitworks">Nasıl Çalışır?</Link>
                     </li>
-                    <li>
+                    <li onClick={closeToggle}>
                       <Link href="#references">Referanslar</Link>
                     </li>
 
-                    <li>
+                    <li onClick={closeToggle}>
                       <a href="#pricing">Satın Al</a>
                     </li>
-                    <li>
+                    <li onClick={closeToggle}>
                       <a href="#contact-us">İletişim</a>
                     </li>
                   </ul>

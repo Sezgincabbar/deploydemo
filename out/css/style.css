@@ -1781,6 +1781,12 @@ header.affix .navbar-nav {
   background: linear-gradient(to right, rgba(0, 118, 167, 1) 0%, rgba(50, 159, 198, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0076a7', endColorstr='#329fc6', GradientType=1);
 }
+@media only screen and (max-width: 992px) {
+  .iq-amazing-tab .nav-tabs li.active div#featuresCards .iq-fancy-box-01:after {
+    content: none;
+  }
+}
+
 .nav-tabs li.active div#featuresCards.round-right,
 .nav-tabs li.active div#featuresCards.round-right:hover,
 .nav-tabs li.active div#featuresCards.round-right:focus {

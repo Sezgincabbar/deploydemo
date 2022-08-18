@@ -89,10 +89,9 @@ function MyApp({ Component , pageProps  }) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Gr": () => (/* binding */ setProduct),
-/* harmony export */   "ZP": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "ms": () => (/* binding */ resetProduct)
+/* harmony export */   "ZP": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* unused harmony export ProductDetail */
+/* unused harmony exports ProductDetail, resetProduct */
 /* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5184);
 /* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -127,11 +126,10 @@ const { setProduct , resetProduct  } = ProductDetail.actions;
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "MS": () => (/* binding */ resetUserInfo),
 /* harmony export */   "ZP": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "ps": () => (/* binding */ setUserInfo)
 /* harmony export */ });
-/* unused harmony export userInfoSlice */
+/* unused harmony exports userInfoSlice, resetUserInfo */
 /* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5184);
 /* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);
 

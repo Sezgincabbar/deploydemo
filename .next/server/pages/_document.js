@@ -150,7 +150,43 @@ class MyDocument extends next_document["default"] {
                         /*#__PURE__*/ jsx_runtime_.jsx(next_document.NextScript, {}),
                         /*#__PURE__*/ jsx_runtime_.jsx("script", {
                             async: true,
+                            src: "https://code.jquery.com/jquery-3.6.0.js",
+                            integrity: "sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=",
+                            crossOrigin: "anonymous"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("script", {
+                            async: true,
+                            type: "text/javascript",
+                            src: "js/jquery.appear.js"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("script", {
+                            async: true,
+                            type: "text/javascript",
+                            src: "js/counter/jquery.countTo.js"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("script", {
+                            async: true,
+                            type: "text/javascript",
+                            src: "js/magnific-popup/jquery.magnific-popup.min.js"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("script", {
+                            async: true,
+                            type: "text/javascript",
+                            src: "js/jquery.countdown.min.js"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("script", {
+                            async: true,
+                            type: "text/javascript",
+                            src: "js/bootstrap.min.js"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("script", {
+                            async: true,
                             src: "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("script", {
+                            async: true,
+                            type: "text/javascript",
+                            src: "js/custom.js"
                         })
                     ]
                 })

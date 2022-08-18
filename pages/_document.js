@@ -39,14 +39,9 @@ class MyDocument extends Document {
           <meta name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta name="author" content="softalya.com" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
           <meta name="apple-itunes-app" content="app-id=1529432227" />
           <meta name="google-play-app" content="app-id=com.manifolt.v2" />
 
-          <meta property="og:image" content="http://example.com/logo.jpg"></meta>
-          <meta property="og:image:type" content="image/png"></meta>
-          <meta property="og:image:width" content="1024"></meta>
-          <meta property="og:image:height" content="1024"></meta>
           <title>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
 
           <link rel="stylesheet" type="text/css" href="/css/doc.css" />
@@ -94,13 +89,19 @@ class MyDocument extends Document {
           {/* <!-- jQuery --> */}
           {/* <script async src="jquery-3.5.1.js"></script> */}
           {/* <script async type="text/javascript" src="js/jquery.min.js"></script> */}
+          <script
+            async
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossOrigin="anonymous"
+          ></script>
 
           {/* <!-- bootstrap --> */}
-          {/* <script async type="text/javascript" src="js/jquery.appear.js"></script>
+          <script async type="text/javascript" src="js/jquery.appear.js"></script>
           <script async type="text/javascript" src="js/counter/jquery.countTo.js"></script>
           <script async type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
           <script async type="text/javascript" src="js/jquery.countdown.min.js"></script>
-          <script async type="text/javascript" src="js/bootstrap.min.js"></script> */}
+          <script async type="text/javascript" src="js/bootstrap.min.js"></script>
           <script async src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
           {/* <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> */}
           {/* <script async type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> */}
@@ -122,7 +123,7 @@ class MyDocument extends Document {
           {/* <!-- Countdown --> */}
 
           {/* <!-- Custom --> */}
-          {/* <script async type="text/javascript" src="js/custom.js"></script> */}
+          <script async type="text/javascript" src="js/custom.js"></script>
 
           {/* <!-- Style Customizer -->  */}
           {/* <script async type="text/javascript" src="js/style-customizer.js"></script> */}

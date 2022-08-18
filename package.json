@@ -6,6 +6,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "start_pm2": "next start -p 8047",
     "lint": "next lint",
     "export": "next export"
   },

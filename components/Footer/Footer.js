@@ -17,7 +17,7 @@ export default function Footer() {
       <section className="iq-our-info white-bg overview-block-ptb grey-bg">
         <div className="container">
           <div className="row">
-            <div className="col-sm-4">
+            <div className="col-sm-4" style={{ marginTop: "8px" }}>
               <div className="iq-info-box text-center iq-pt-50">
                 <div className="info-icon green-bg">
                   <ion-icon name="location-outline"></ion-icon>
@@ -26,7 +26,7 @@ export default function Footer() {
                 <span className="lead iq-tw-6">Pınarbaşı Mh. Hürriyet Cd. Teknokent Uluğbey No : 3 A İç Kapı No : A25 Konyaaltı/ANTALYA</span>
               </div>
             </div>
-            <div className="col-sm-4">
+            <div className="col-sm-4" style={{ marginTop: "8px" }}>
               <div className="iq-info-box text-center iq-pt-50">
                 <div className="info-icon green-bg">
                   <ion-icon name="call-outline"></ion-icon>
@@ -36,7 +36,7 @@ export default function Footer() {
                 {/* <p>Mon-Fri 8:00am - 8:00pm</p> */}
               </div>
             </div>
-            <div className="col-sm-4">
+            <div className="col-sm-4" style={{ marginTop: "8px" }}>
               <div className="iq-info-box text-center iq-pt-50">
                 <div className="info-icon green-bg">
                   <ion-icon name="mail-outline"></ion-icon>

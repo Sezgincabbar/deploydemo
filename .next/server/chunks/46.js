@@ -77,6 +77,9 @@ function Footer() {
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "col-sm-4",
+                                style: {
+                                    marginTop: "8px"
+                                },
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: "iq-info-box text-center iq-pt-50",
                                     children: [
@@ -99,6 +102,9 @@ function Footer() {
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "col-sm-4",
+                                style: {
+                                    marginTop: "8px"
+                                },
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: "iq-info-box text-center iq-pt-50",
                                     children: [
@@ -121,6 +127,9 @@ function Footer() {
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "col-sm-4",
+                                style: {
+                                    marginTop: "8px"
+                                },
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: "iq-info-box text-center iq-pt-50",
                                     children: [
@@ -363,6 +372,15 @@ function Footer() {
 
 
 function Header() {
+    const navbarRef = (0,external_react_.useRef)();
+    const closeToggle = ()=>{
+        const navbarButton = document.querySelector('button[class="navbar-toggle"]');
+        const navbarContainer = document.querySelector('div[class="navbar-collapse collapse in"]');
+        navbarContainer.classList.remove("in");
+        navbarContainer.setAttribute("aria-expanded", "false");
+        navbarButton.classList.add("collapsed");
+        navbarButton.setAttribute("aria-expanded", "false");
+    };
     const router = (0,router_.useRouter)();
     (0,external_react_.useEffect)(()=>{
         window.addEventListener("scroll", isSticky);
@@ -387,6 +405,7 @@ function Header() {
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "col-sm-12",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("nav", {
+                            ref: navbarRef,
                             className: "navbar navbar-default",
                             children: [
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -444,42 +463,49 @@ function Header() {
                                             id: "top-menu",
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    onClick: closeToggle,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                         href: "#about-us",
                                                         children: "Hakkında"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    onClick: closeToggle,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                         href: "#features",
                                                         children: "\xd6zellikler"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    onClick: closeToggle,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                         href: "#screenshots",
                                                         children: "Ekran G\xf6r\xfcnt\xfcleri"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    onClick: closeToggle,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                         href: "#howitworks",
                                                         children: "Nasıl \xc7alışır?"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    onClick: closeToggle,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                         href: "#references",
                                                         children: "Referanslar"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    onClick: closeToggle,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                         href: "#pricing",
                                                         children: "Satın Al"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    onClick: closeToggle,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                         href: "#contact-us",
                                                         children: "İletişim"

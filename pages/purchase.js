@@ -401,8 +401,6 @@ const Purchase = () => {
               </div>
             </div>
           </form>
-          <button onClick={() => dispatch(resetUserInfo())}> Reset</button>
-          <button onClick={() => dispatch(resetProduct())}> reset fiyat</button>
         </div>
       </section>
     </Layout>
