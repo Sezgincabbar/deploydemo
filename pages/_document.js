@@ -42,11 +42,11 @@ class MyDocument extends Document {
           <meta name="apple-itunes-app" content="app-id=1529432227" />
           <meta name="google-play-app" content="app-id=com.manifolt.v2" />
 
-          <meta name="og:title" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
-          <meta name="og:description" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
-          <meta name="og:url" content="https://manifolt.com/" />
-          <meta name="og:image" content="images/favicon.ico"></meta>
-          <meta name="og:type" content="website" />
+          <meta property="og:title" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
+          <meta property="og:description" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
+          <meta property="og:url" content="https://manifolt.com/" />
+          <meta property="og:image" content="images/favicon.ico"></meta>
+          <meta property="og:type" content="website" />
 
           <title>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
 

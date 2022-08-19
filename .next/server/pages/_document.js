@@ -91,23 +91,23 @@ class MyDocument extends next_document["default"] {
                             content: "app-id=com.manifolt.v2"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            name: "og:title",
+                            property: "og:title",
                             content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            name: "og:description",
+                            property: "og:description",
                             content: "Manifolt, servis uygulaması, ara\xe7 bakım uygualaması, tamirci uygulaması, sanayici uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            name: "og:url",
+                            property: "og:url",
                             content: "https://manifolt.com/"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            name: "og:image",
+                            property: "og:image",
                             content: "images/favicon.ico"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            name: "og:type",
+                            property: "og:type",
                             content: "website"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("title", {
