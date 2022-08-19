@@ -48,9 +48,10 @@ class MyDocument extends Document {
           <meta property="og:image" content="images/favicon.ico"></meta>
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:image" content="images/favicon.ico" />
+          <meta name="twitter:site" content="@flickr" />
           <meta name="twitter:title" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta name="twitter:description" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
+          <meta name="twitter:image" content="images/favicon.ico" />
           <title>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
 
           <link rel="stylesheet" type="text/css" href="/css/doc.css" />
