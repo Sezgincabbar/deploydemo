@@ -549,10 +549,7 @@ function Header() {
     });
 };
 
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__(968);
 ;// CONCATENATED MODULE: ./components/Layout.js
-
 
 
 

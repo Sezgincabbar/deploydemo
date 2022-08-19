@@ -59,6 +59,9 @@ class MyDocument extends next_document["default"] {
             children: [
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)(next_document.Head, {
                     children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("title", {
+                            children: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
+                        }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             charSet: "utf-8"
                         }),
@@ -67,6 +70,9 @@ class MyDocument extends next_document["default"] {
                             content: "IE=edge"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            style: {
+                                fontSize: "5px"
+                            },
                             name: "title",
                             content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
@@ -75,9 +81,6 @@ class MyDocument extends next_document["default"] {
                             content: "Manifolt, servis uygulaması, ara\xe7 bakım uygualaması, tamirci uygulaması, sanayici uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            style: {
-                                fontSize: "12px"
-                            },
                             name: "description",
                             content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
@@ -116,9 +119,6 @@ class MyDocument extends next_document["default"] {
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             property: "og:image",
                             content: "images/about-us.jpg"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                            children: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("link", {
                             rel: "stylesheet",

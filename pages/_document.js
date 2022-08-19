@@ -33,12 +33,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title style={{ fontSize: "12px" }}>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
+          <title>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta style={{ fontSize: "12px" }} name="title" content="Manifolt - Araç Tamir Servislerinin Uygulaması"></meta>
+          <meta style={{ fontSize: "5px" }} name="title" content="Manifolt - Araç Tamir Servislerinin Uygulaması"></meta>
           <meta name="keywords" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
-          <meta style={{ fontSize: "12px" }} name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
+          <meta name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta name="author" content="softalya.com" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <meta name="apple-itunes-app" content="app-id=1529432227" />
