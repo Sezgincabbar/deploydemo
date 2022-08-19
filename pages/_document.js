@@ -33,26 +33,22 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title style={{ fontSize: "5px" }}>hasan</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          {/* <meta style={{ fontSize: "5px" }} name="title" content="Manifolt - Araç Tamir Servislerinin Uygulaması"></meta> */}
-          <meta style={{ fontSize: "5px" }} name="title" content="Hasan ABİ"></meta>
-
+          <meta name="title" content="Manifolt - Araç Tamir Servislerinin Uygulaması"></meta>
           <meta name="keywords" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
-          {/* <meta name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" /> */}
-          <meta name="description" content="hasan abi" />
-
+          <meta name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta name="author" content="softalya.com" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <meta name="apple-itunes-app" content="app-id=1529432227" />
           <meta name="google-play-app" content="app-id=com.manifolt.v2" />
-          {/* <meta property="og:type" content="website" />
+          <meta property="og:type" content="website" />
           <meta property="og:url" content="https://manifolt.com" />
           <meta property="og:title" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta property="og:description" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
-          <meta property="og:image" content="images/about-us.jpg" />
-          <link rel="stylesheet" type="text/css" href="/css/doc.css" /> */}
+          <meta property="og:image" content="images/favicon.ico" />
+          <title>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
+          <link rel="stylesheet" type="text/css" href="/css/doc.css" />
           {/* <!-- Favicon --> */}
           <link rel="shortcut icon" href="images/favicon.ico" />
           {/* <!-- Google Fonts --> */}
