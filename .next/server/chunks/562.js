@@ -551,7 +551,6 @@ function Header() {
 
 // EXTERNAL MODULE: external "next/head"
 var head_ = __webpack_require__(968);
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 ;// CONCATENATED MODULE: ./components/Layout.js
 
 
@@ -562,68 +561,6 @@ var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 function Layout({ children  }) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        charSet: "utf-8"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        httpEquiv: "X-UA-Compatible",
-                        content: "IE=edge"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        name: "title",
-                        content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        name: "keywords",
-                        content: "Manifolt, servis uygulaması, ara\xe7 bakım uygualaması, tamirci uygulaması, sanayici uygulaması"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        style: {
-                            fontSize: "12px"
-                        },
-                        name: "description",
-                        content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        name: "author",
-                        content: "softalya.com"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        name: "viewport",
-                        content: "width=device-width, initial-scale=1, maximum-scale=1"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        name: "apple-itunes-app",
-                        content: "app-id=1529432227"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        name: "google-play-app",
-                        content: "app-id=com.manifolt.v2"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        property: "og:type",
-                        content: "website"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        property: "og:url",
-                        content: "https://manifolt.com"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        property: "og:title",
-                        content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        property: "og:description",
-                        content: "Manifolt, servis uygulaması, ara\xe7 bakım uygualaması, tamirci uygulaması, sanayici uygulaması"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        property: "og:image",
-                        content: "images/about-us.jpg"
-                    })
-                ]
-            }),
             /*#__PURE__*/ jsx_runtime_.jsx(Header, {}),
             children,
             /*#__PURE__*/ jsx_runtime_.jsx(Footer, {}),
