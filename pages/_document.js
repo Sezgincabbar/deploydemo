@@ -42,6 +42,10 @@ class MyDocument extends Document {
           <meta name="apple-itunes-app" content="app-id=1529432227" />
           <meta name="google-play-app" content="app-id=com.manifolt.v2" />
 
+          <meta property="og:title" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
+          <meta property="og:type" content="article" />
+          <meta property="og:image" content="images/favicon.ico" />
+
           <title>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
 
           <link rel="stylesheet" type="text/css" href="/css/doc.css" />

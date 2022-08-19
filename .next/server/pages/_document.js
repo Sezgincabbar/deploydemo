@@ -90,6 +90,18 @@ class MyDocument extends next_document["default"] {
                             name: "google-play-app",
                             content: "app-id=com.manifolt.v2"
                         }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            property: "og:title",
+                            content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            property: "og:type",
+                            content: "article"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            property: "og:image",
+                            content: "images/favicon.ico"
+                        }),
                         /*#__PURE__*/ jsx_runtime_.jsx("title", {
                             children: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
