@@ -40,7 +40,9 @@ class MyDocument extends Document {
           <meta style={{ fontSize: "5px" }} name="title" content="Hasan ABİ"></meta>
 
           <meta name="keywords" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
-          <meta name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
+          {/* <meta name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" /> */}
+          <meta name="description" content="hasan abi" />
+
           <meta name="author" content="softalya.com" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <meta name="apple-itunes-app" content="app-id=1529432227" />

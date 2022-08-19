@@ -74,7 +74,7 @@ class MyDocument extends next_document["default"] {
                                 fontSize: "5px"
                             },
                             name: "title",
-                            content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
+                            content: "Hasan ABİ"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             name: "keywords",
@@ -82,7 +82,7 @@ class MyDocument extends next_document["default"] {
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             name: "description",
-                            content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
+                            content: "hasan abi"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             name: "author",
@@ -99,31 +99,6 @@ class MyDocument extends next_document["default"] {
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             name: "google-play-app",
                             content: "app-id=com.manifolt.v2"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:type",
-                            content: "website"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:url",
-                            content: "https://manifolt.com"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:title",
-                            content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:description",
-                            content: "Manifolt, servis uygulaması, ara\xe7 bakım uygualaması, tamirci uygulaması, sanayici uygulaması"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:image",
-                            content: "images/about-us.jpg"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                            rel: "stylesheet",
-                            type: "text/css",
-                            href: "/css/doc.css"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("link", {
                             rel: "shortcut icon",
