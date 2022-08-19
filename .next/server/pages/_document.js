@@ -110,6 +110,10 @@ class MyDocument extends next_document["default"] {
                             property: "og:type",
                             content: "website"
                         }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            name: "twitter:card",
+                            content: "images/favicon.ico"
+                        }),
                         /*#__PURE__*/ jsx_runtime_.jsx("title", {
                             children: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
