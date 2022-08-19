@@ -3,14 +3,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 export default function Banner() {
-  // const handleActive = async (item) => {
-  //   const comp = document.querySelector(`document.querySelector('#carousel-example-generic>.carousel-indicators>li.asd')`);
-  //   const prevComps = document.querySelectorAll("#carousel-example-generic>.container>.carousel-inner>.item");
-  //   for await (const prevComp of prevComps) {
-  //     prevComp.classList.remove("active");
-  //   }
-  // };
-
   return (
     <section id="iq-home" className="banner iq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style={{ backgroundImage: "url(images/banner/bg.jpg)" }}>
       <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
@@ -23,7 +15,7 @@ export default function Banner() {
         {/* <!-- Wrapper for slides --> */}
         <div className="container">
           <div className="carousel-inner" role="listbox">
-            <Slider dots={false} arrows={false} autoplay autoplaySpeed={5000}>
+            <Slider initialSlide={2} dots={false} arrows={false} autoplay autoplaySpeed={5000}>
               <div className="item active">
                 <div className="banner-text">
                   <div className="row">

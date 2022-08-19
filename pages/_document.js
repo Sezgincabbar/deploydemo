@@ -35,60 +35,43 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="title" content="Manifolt - Araç Tamir Servislerinin Uygulaması"></meta>
           <meta name="keywords" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
-          <meta name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
+          <meta style={{ fontSize: "12px" }} name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta name="author" content="softalya.com" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <meta name="apple-itunes-app" content="app-id=1529432227" />
           <meta name="google-play-app" content="app-id=com.manifolt.v2" />
-
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://manifolt.com" />
           <meta property="og:title" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta property="og:description" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
           <meta property="og:image" content="images/about-us.jpg" />
-          <meta name="twitter:card" content="summary" />
-          <meta name="twitter:site" content="@flickr" />
-          <meta name="twitter:title" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
-          <meta name="twitter:description" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
-          <meta name="twitter:image" content="images/favicon.ico" />
           <title>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
-
           <link rel="stylesheet" type="text/css" href="/css/doc.css" />
           {/* <!-- Favicon --> */}
           <link rel="shortcut icon" href="images/favicon.ico" />
-
           {/* <!-- Google Fonts --> */}
           <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;Raleway:300,400,500,600,700,800,900" />
-
           {/* <!-- Bootstrap --> */}
           <link rel="stylesheet" href="css/bootstrap.min.css" />
-
           {/* <!-- owl-carousel --> */}
           <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.css" />
-
           {/* <!-- Font Awesome --> */}
           <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-
           {/* <!-- Magnific Popup --> */}
           {/* <link rel="stylesheet" type="text/css" href="css/magnific-popup/magnific-popup.css" /> */}
-
           {/* <!-- Animate --> */}
           <link rel="stylesheet" type="text/css" href="css/animate.css" />
-
           {/* <!-- Ionicons --> */}
           <link rel="stylesheet" href="css/ionicons.min.css" />
-
           {/* <!-- Style --> */}
           <link rel="stylesheet" href="css/style.css" />
-
           {/* <!-- Responsive --> */}
           <link rel="stylesheet" href="css/responsive.css" />
-
           {/* <!-- Style customizer (Remove these two lines please) --> */}
           {/* <link rel="stylesheet" href="javascript:void(0)" data-style="styles" />
           <link rel="stylesheet" href="css/style-customizer.css" /> */}
-
           {/* <!-- custom style --> */}
           <link rel="stylesheet" href="css/custom.css" />
         </Head>

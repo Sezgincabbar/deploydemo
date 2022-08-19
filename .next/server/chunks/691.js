@@ -23,13 +23,6 @@ exports.modules = {
 
 
 function Banner() {
-    // const handleActive = async (item) => {
-    //   const comp = document.querySelector(`document.querySelector('#carousel-example-generic>.carousel-indicators>li.asd')`);
-    //   const prevComps = document.querySelectorAll("#carousel-example-generic>.container>.carousel-inner>.item");
-    //   for await (const prevComp of prevComps) {
-    //     prevComp.classList.remove("active");
-    //   }
-    // };
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
         id: "iq-home",
         className: "banner iq-bg iq-bg-fixed iq-box-shadow iq-over-black-90",
@@ -46,6 +39,7 @@ function Banner() {
                     className: "carousel-inner",
                     role: "listbox",
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((react_slick__WEBPACK_IMPORTED_MODULE_3___default()), {
+                        initialSlide: 2,
                         dots: false,
                         arrows: false,
                         autoplay: true,

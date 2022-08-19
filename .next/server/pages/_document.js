@@ -67,10 +67,17 @@ class MyDocument extends next_document["default"] {
                             content: "IE=edge"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            name: "title",
+                            content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             name: "keywords",
                             content: "Manifolt, servis uygulaması, ara\xe7 bakım uygualaması, tamirci uygulaması, sanayici uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            style: {
+                                fontSize: "12px"
+                            },
                             name: "description",
                             content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
@@ -91,6 +98,14 @@ class MyDocument extends next_document["default"] {
                             content: "app-id=com.manifolt.v2"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            property: "og:type",
+                            content: "website"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            property: "og:url",
+                            content: "https://manifolt.com"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             property: "og:title",
                             content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
@@ -99,20 +114,8 @@ class MyDocument extends next_document["default"] {
                             content: "Manifolt, servis uygulaması, ara\xe7 bakım uygualaması, tamirci uygulaması, sanayici uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:url",
-                            content: "https://manifolt.com/"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             property: "og:image",
-                            content: "images/favicon.ico"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:type",
-                            content: "website"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            name: "twitter:card",
-                            content: "images/favicon.ico"
+                            content: "images/about-us.jpg"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("title", {
                             children: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"

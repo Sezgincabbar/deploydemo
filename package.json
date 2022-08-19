@@ -26,14 +26,12 @@
     "react-owl-carousel": "^2.3.3",
     "react-redux": "^8.0.2",
     "react-slick": "^0.29.0",
-    "react-toastify": "^9.0.8",
     "react-wow": "^1.0.0",
     "redux-persist": "^6.0.0",
     "sass": "^1.54.3",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
-    "sweetalert2": "^11.4.26",
-    "yup": "^0.32.11"
+    "sweetalert2": "^11.4.26"
   },
   "devDependencies": {
     "eslint": "8.20.0",

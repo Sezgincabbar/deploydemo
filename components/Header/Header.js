@@ -1,17 +1,22 @@
 import React, { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
 export default function Header() {
   const navbarRef = useRef();
 
+  const { height, width } = useWindowDimensions();
+
   const closeToggle = () => {
-    const navbarButton = document.querySelector('button[class="navbar-toggle"]');
-    const navbarContainer = document.querySelector('div[class="navbar-collapse collapse in"]');
-    navbarContainer.classList.remove("in");
-    navbarContainer.setAttribute("aria-expanded", "false");
-    navbarButton.classList.add("collapsed");
-    navbarButton.setAttribute("aria-expanded", "false");
+    if (width < 768) {
+      const navbarButton = document.querySelector('button[class="navbar-toggle"]');
+      const navbarContainer = document.querySelector('div[class="navbar-collapse collapse in"]');
+      navbarContainer.classList.remove("in");
+      navbarContainer.setAttribute("aria-expanded", "false");
+      navbarButton.classList.add("collapsed");
+      navbarButton.setAttribute("aria-expanded", "false");
+    }
   };
   const router = useRouter();
   useEffect(() => {
