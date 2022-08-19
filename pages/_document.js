@@ -33,9 +33,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title style={{ fontSize: "12px" }}>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="title" content="Manifolt - Araç Tamir Servislerinin Uygulaması"></meta>
+          <meta style={{ fontSize: "12px" }} name="title" content="Manifolt - Araç Tamir Servislerinin Uygulaması"></meta>
           <meta name="keywords" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
           <meta style={{ fontSize: "12px" }} name="description" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta name="author" content="softalya.com" />
@@ -47,7 +48,6 @@ class MyDocument extends Document {
           <meta property="og:title" content="Manifolt - Araç Tamir Servislerinin Uygulaması" />
           <meta property="og:description" content="Manifolt, servis uygulaması, araç bakım uygualaması, tamirci uygulaması, sanayici uygulaması" />
           <meta property="og:image" content="images/about-us.jpg" />
-          <title>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
           <link rel="stylesheet" type="text/css" href="/css/doc.css" />
           {/* <!-- Favicon --> */}
           <link rel="shortcut icon" href="images/favicon.ico" />
