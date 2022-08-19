@@ -60,6 +60,9 @@ class MyDocument extends next_document["default"] {
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)(next_document.Head, {
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("title", {
+                            style: {
+                                fontSize: "5px"
+                            },
                             children: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
