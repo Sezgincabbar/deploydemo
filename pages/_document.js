@@ -33,7 +33,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title style={{ fontSize: "5px" }}>Manifolt - Araç Tamir Servislerinin Uygulaması</title>
+          <title style={{ fontSize: "5px" }}>hasan</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           {/* <meta style={{ fontSize: "5px" }} name="title" content="Manifolt - Araç Tamir Servislerinin Uygulaması"></meta> */}

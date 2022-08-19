@@ -63,7 +63,7 @@ class MyDocument extends next_document["default"] {
                             style: {
                                 fontSize: "5px"
                             },
-                            children: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
+                            children: "hasan"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                             charSet: "utf-8"
