@@ -91,16 +91,24 @@ class MyDocument extends next_document["default"] {
                             content: "app-id=com.manifolt.v2"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:title",
+                            name: "og:title",
                             content: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:type",
-                            content: "article"
+                            name: "og:description",
+                            content: "Manifolt, servis uygulaması, ara\xe7 bakım uygualaması, tamirci uygulaması, sanayici uygulaması"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                            property: "og:image",
+                            name: "og:url",
+                            content: "https://manifolt.com/"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            name: "og:image",
                             content: "images/favicon.ico"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            name: "og:type",
+                            content: "website"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("title", {
                             children: "Manifolt - Ara\xe7 Tamir Servislerinin Uygulaması"
